@@ -1,2 +1,24 @@
 @use 'mixin';
 @use 'reset';
+@use 'variables';
+@use 'header';
+@use 'hero';
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--white);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}

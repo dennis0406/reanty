@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4.5rem;
+  list-style: none;
+  font-size: 1.8rem;
+  &__link {
+    color: var(--black70);
+    text-decoration: none;
+    font-weight: 600;
+    text-wrap: nowrap;
+  }
+  &__item {
+    cursor: pointer;
+    &--signup {
+      padding: 1.25rem 3rem;
+      border-radius: 1rem;
+      background-color: var(--primary);
+      color: var(--white);
+    }
+  }
+}

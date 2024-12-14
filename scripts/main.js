@@ -1,3 +1,7 @@
+import './components/header.js';
+import './components/hero.js';
+import './components/footer.js';
+
 const COMPONENTS = [
     'header',
     'hero',

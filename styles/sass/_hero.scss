@@ -1,0 +1,108 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1442px;
+  margin: 0 auto;
+  padding-bottom: 10rem;
+  &-wrapper {
+    background-color: var(--white50);
+  }
+
+  &__left {
+    padding-top: 20rem;
+    max-width: 575px;
+    &__title {
+      font-size: 6.4em;
+      font-weight: 700;
+      position: relative;
+      letter-spacing: -0.24rem;
+      line-height: 7.4rem;
+    }
+    &__desc {
+      margin-top: 2rem;
+      color: var(--white10);
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
+    &__img {
+      position: absolute;
+      bottom: -2rem;
+      right: -2rem;
+      z-index: 10;
+    }
+    &__slider{
+        max-width: 41.8rem;
+        max-height: 8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  }
+  &__right {
+    position: relative;
+    width: calc(100% - 575px);
+  }
+  &__video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    width: 100%;
+    min-height: 703px;
+    &--wrapper {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      min-height: 703px;
+    }
+  }
+  &-revenue {
+    position: absolute;
+    bottom: -5rem;
+    left: -5rem;
+    width: 24rem;
+    height: 19rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    box-shadow: 10px 14px 59px 0px var(--black-purple70);
+    &__content {
+      padding-left: 3rem;
+      padding-top: 3rem;
+    }
+    &__number {
+      font-size: 2.6rem;
+      font-weight: 600;
+      color: var(--black);
+      margin-top: 1rem;
+    }
+    &__desc {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: var(--white10);
+    }
+  }
+  &-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 1rem;
+    &__text {
+        font-size: 1.4rem;
+        color: var(--white);
+    }
+    &__icon {
+        padding: 1rem;
+        border-radius: 50%;
+        background-color: var(--white);
+    }
+  }
+}
